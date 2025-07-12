@@ -11,13 +11,18 @@ header {
   padding-right: 50px;
 }
 footer{
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0E111B;
-  color: white;
-  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  padding: 6px 0;
+  z-index: 9999;
+  border-top: 1px solid #2a2a2a;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo{

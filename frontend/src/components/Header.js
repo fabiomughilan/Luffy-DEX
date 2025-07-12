@@ -1,6 +1,7 @@
 import React from 'react'
 import Eth from '../eth.svg'
 import Logo from '../onepiece logo.png'
+import GitHubIcon from '../github.svg'
 import { Link } from 'react-router-dom'
 
 function Header(props) {
@@ -17,7 +18,14 @@ function Header(props) {
           <div className="headerItem">Tokens</div>
         </Link>
       </div>
+      
+
       <div className="rightH">
+        <div className="headerItem">
+          <a href="https://github.com/FabioMughilan/Luffy-DEX" className="link">
+            <div className="headerItem">Source Code</div>
+          </a>
+        </div>
         <div className="headerItem">
           <img src={Eth} alt="eth" className="eth"/>
           Ethereum

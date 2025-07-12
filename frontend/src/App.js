@@ -20,7 +20,9 @@ function App() {
           <Route path="/tokens" element={<Token />} />
         </Routes>
       </div>
-    <Footer><p>Developed by Fabio Mughilan</p></Footer>
+      <footer className="footer">
+        <p>Made with ❤️ by Fabio Mughilan</p>
+      </footer>
     </div>
   )
 

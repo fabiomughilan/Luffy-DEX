@@ -10,6 +10,15 @@ header {
   padding-left: 50px;
   padding-right: 50px;
 }
+footer{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0E111B;
+  color: white;
+  font-size: 14px;
+}
 
 .logo{
   width: 85px;

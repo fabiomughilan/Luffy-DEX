@@ -1,7 +1,7 @@
 import React from 'react'
 import Eth from '../eth.svg'
 import Logo from '../onepiece logo.png'
-import GitHubIcon from '../github.svg'
+
 import { Link } from 'react-router-dom'
 
 function Header(props) {

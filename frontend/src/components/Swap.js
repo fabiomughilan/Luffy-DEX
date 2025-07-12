@@ -85,7 +85,7 @@ function Swap(props) {
 
   async function fetchPrices(one, two) {
 
-    const res = await axios.get(`http://localhost:3001/tokenPrice`, {
+    const res = await axios.get(`https://luffy-dex.onrender.com/tokenPrice`, {
       params: { addressOne: one, addressTwo: two }
     })
 
@@ -95,7 +95,7 @@ function Swap(props) {
 
   async function fetchDexSwap() {
   try {
-    const allowance = await axios.get(`http://localhost:3001/allowance`, {
+    const allowance = await axios.get(`https://luffy-dex.onrender.com/allowance`, {
       params: {
         tokenAddress: tokenOne.address,
         walletAddress: address,
@@ -103,7 +103,7 @@ function Swap(props) {
     });
 
     if (allowance.data.allowance === "0") {
-      const approve = await axios.get(`http://localhost:3001/approve-tx`, {
+      const approve = await axios.get(`https://luffy-dex.onrender.com/approve-tx`, {
         params: {
           tokenAddress: tokenOne.address,
         },
